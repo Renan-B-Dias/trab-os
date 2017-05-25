@@ -21,10 +21,12 @@ public class Main {
         if(sc.nextInt() == 0) {
             // Tourist
             generate = 10;
-            timeAppear = 2000;      //Milliseconds
+//            timeAppear = 2000;      //Milliseconds
+            timeAppear = 1;
             walkTime = 1200;        //Milliseconds
             maxTourists = 3;
-            timeBath = 6000;        //Milliseconds
+//            timeBath = 6000;        //Milliseconds
+            timeBath = 12000;
 
             //Bird
             birdGenerate = 20;

@@ -1,6 +1,7 @@
 package Lake;
 
 import Birds.Bird;
+import Birds.ThreadBird;
 import Tourist.Tourist;
 
 import java.util.Date;
@@ -19,6 +20,7 @@ public class Lake {
     private Semaphore mutex;
     private Semaphore empty;
     private Semaphore full;
+    private int touristCounter = 0;
 
     public Lake(int maxTourists, int batheTime, int maxBirds, int drinkTime) {
         // Tourist
@@ -48,8 +50,13 @@ public class Lake {
 
         touristArray[in] = tourist;
         in = (in +1) % maxTourists;
+        touristCounter++;
 
         mutex.release();
+
+        if(touristCounter == maxTourists) {
+//            meh.acquire();
+        }
 
         System.out.println(new Date() + ": O turista " + tourist.id + " entrou na piscina");
         Thread.sleep(batheTime); // Time tourist takes to bathe
@@ -63,6 +70,11 @@ public class Lake {
 
         Tourist t = touristArray[out];
         out = (out+1) % maxTourists;
+        touristCounter--;
+
+        if(touristCounter < maxTourists) {
+//            meh.release();
+        }
 
         mutex.release();
         empty.release();
@@ -78,16 +90,25 @@ public class Lake {
     private Semaphore birdMutex, birdEmpty, birdFull;
 
     public void insertBird(Bird bird) throws Exception {
+
+        while(touristCounter == maxTourists && birdCount == maxBirds) {
+            System.out.println("O passarinho " + bird.id + " teve que ir embora porque ha muitos turistas");
+            Thread.sleep(ThreadBird.birdConstant);
+            System.out.println("O passaro: " + bird.id + " voltou a margem da piscina");
+        }
+
         birdEmpty.acquire();
         birdMutex.acquire();
 
         birdsArray[birdIn] = bird;
         birdIn = (birdIn + 1) % maxBirds;
+        birdCount++;
 
         birdMutex.release();
         System.out.println(new Date() + ": O passaro " + bird.id + " bebendo agua");
         Thread.sleep(drinkTime);
         System.out.println(new Date() + ": O passaro " + bird.id + " terminou de beber");
+//        meh.release();
         birdFull.release();
     }
 
@@ -97,10 +118,13 @@ public class Lake {
 
         Bird b = birdsArray[birdOut];
         birdOut = (birdOut + 1) % maxBirds;
+        birdCount--;
 
         birdMutex.release();
         birdEmpty.release();
         return b;
     }
+
+    private int birdCount = 0;
 
 }
