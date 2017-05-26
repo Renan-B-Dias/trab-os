@@ -21,12 +21,10 @@ public class Main {
         if(sc.nextInt() == 0) {
             // Tourist
             generate = 10;
-//            timeAppear = 2000;      //Milliseconds
-            timeAppear = 1;
+            timeAppear = 2000;      //Milliseconds
             walkTime = 1200;        //Milliseconds
             maxTourists = 3;
-//            timeBath = 6000;        //Milliseconds
-            timeBath = 12000;
+            timeBath = 6000;        //Milliseconds
 
             //Bird
             birdGenerate = 20;
@@ -81,14 +79,23 @@ public class Main {
         ThreadBird.birdConstant = birdAppear;
         Thread birdThreads[] = new Thread[birdGenerate];
 
-        for(int i = 0; i < birdThreads.length; i++)
+        for(int i = 0; i < birdThreads.length; i++) {
             birdThreads[i] = new Thread(new ThreadBird(lake));
+            birdThreads[i].setName("Bird Thread " + i); // For debug
+        }
 
-        for(int i = 0; i < touristThread.length; i++)
+        for(int i = 0; i < touristThread.length; i++) {
             touristThread[i] = new Thread(new ThreadTourist(lake));
+            touristThread[i].setName("Tourist Thread " + i); // For debug
+        }
 
         Thread touristConsumer = new Thread(new TouristEater(lake, generate));
+        touristConsumer.setName("Tourist Eater Thread");
+
         Thread birdConsumer = new Thread(new BirdEater(lake, birdGenerate));
+        birdConsumer.setName("Bird Eater Thread");
+
+        System.out.printf("Inicio da observação [%d turistas e %d passarinhos]\n", lake.touristCount, lake.birdCount);
 
         for(Thread x: touristThread)
             x.start();
