@@ -8,7 +8,6 @@ import java.util.Date;
  * Created by yellow-umbrella on 20/05/17.
  */
 public class ThreadBird implements Runnable {
-
     public static int birdConstant;
 
     private Bird bird;
@@ -20,20 +19,13 @@ public class ThreadBird implements Runnable {
     }
 
     public void run() {
-
         try {
             Thread.sleep(this.bird.id * birdConstant);  // Time to generate bird
-        } catch(Exception e) {
 
-        }
-
-        try {
-            System.out.println(new Date() + " O Passaro: " + bird.id + " chegou no lago pela primeira vez [" + lake.birdCount + " passarinhos]");
+            System.out.println(new Date() + " O passarinho " + bird.id + " chegou a margem da piscina pela primeira vez [" + lake.birdCount + " passarinhos]");
             lake.insertBird(bird);
-        } catch(Exception e) {
-
+        } catch(InterruptedException e) {
+            // TODO
         }
-
     }
-
 }
