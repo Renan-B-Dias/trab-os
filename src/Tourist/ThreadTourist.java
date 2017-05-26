@@ -29,9 +29,9 @@ public class ThreadTourist implements Runnable {
         }
 
         try {
-            System.out.println(new Date() + ": Turista com id: " + tourist.id + " começou a caminhada");
+            System.out.println(new Date() + ": Turista com id: " + tourist.id + " começou a caminhada [" + lake.touristCount + " turistas]");
             Thread.sleep(walkTime);
-            System.out.println(new Date() + ": Turista com id: " + tourist.id + " chegou a margem");
+            System.out.println(new Date() + ": Turista com id: " + tourist.id + " chegou a margem [" + lake.touristCount + " turistas]");
             lake.insertTourist(tourist);
         } catch(Exception e) {
 

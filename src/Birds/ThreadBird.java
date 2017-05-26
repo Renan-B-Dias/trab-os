@@ -28,7 +28,7 @@ public class ThreadBird implements Runnable {
         }
 
         try {
-            System.out.println(new Date() + " O Passaro: " + bird.id + " chegou no lago");
+            System.out.println(new Date() + " O Passaro: " + bird.id + " chegou no lago pela primeira vez [" + lake.birdCount + " passarinhos]");
             lake.insertBird(bird);
         } catch(Exception e) {
 

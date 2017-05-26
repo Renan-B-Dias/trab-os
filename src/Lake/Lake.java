@@ -46,14 +46,17 @@ public class Lake {
 
     public void insertTourist(Tourist tourist) throws Exception {
         empty.acquire();
+        meh.acquire();
 
         mutex.acquire();
             touristArray[in] = tourist;
             in = (in +1) % maxTourists;
             touristCount++;
+        System.out.println(new Date() + ": O turista " + tourist.id + " entrou na piscina [" + touristCount + " turistas]");
         mutex.release();
 
-        System.out.println(new Date() + ": O turista " + tourist.id + " entrou na piscina");
+        meh.release();
+
         Thread.sleep(batheTime); // Time tourist takes to bathe
 
         full.release();
@@ -66,8 +69,8 @@ public class Lake {
             Tourist t = touristArray[out];
             out = (out+1) % maxTourists;
             touristCount--;
+        System.out.println(new Date() + ": O turista " + t.id + " saiu da piscina [" + touristCount + " turistas]");
         mutex.release();
-        System.out.println(new Date() + ": O turista " + t.id + " saiu da piscina");
 
         empty.release();
         return t;
@@ -84,11 +87,15 @@ public class Lake {
 
     public void insertBird(Bird bird) throws Exception {
 
-        while(touristCount == maxTourists && birdCount == maxBirds) {
-            System.out.println("O passarinho " + bird.id + " teve que ir embora porque ha muitos turistas");
-            Thread.sleep(ThreadBird.birdConstant);
-            System.out.println("O passaro: " + bird.id + " voltou a margem da piscina");
+        while(touristCount == maxTourists || birdCount == maxBirds) {
+            if (touristCount == maxTourists) {
+                System.out.println("O passarinho " + bird.id + " teve que ir embora porque ha muitos turistas [" + birdCount + " passaros]");
+                Thread.sleep(ThreadBird.birdConstant);
+                System.out.println("O passaro: " + bird.id + " voltou a margem da piscina [" + birdCount + " passaros]");
+            }
         }
+
+        meh.acquire();
 
         birdEmpty.acquire();
 
@@ -96,9 +103,12 @@ public class Lake {
             birdsArray[birdIn] = bird;
             birdIn = (birdIn + 1) % maxBirds;
             birdCount++;
+
         birdMutex.release();
 
-        System.out.println(new Date() + ": O passaro " + bird.id + " bebendo agua");
+        meh.release();
+
+        System.out.println(new Date() + ": O passaro " + bird.id + " começou a beber agua da piscina [" + birdCount + " passaros]");
         Thread.sleep(drinkTime);
 
         birdFull.release();
@@ -112,10 +122,12 @@ public class Lake {
             birdOut = (birdOut + 1) % maxBirds;
             birdCount--;
         birdMutex.release();
-        System.out.println(new Date() + ": O passaro " + b.id + " terminou de beber");
+        System.out.println(new Date() + ": O passaro " + b.id + " terminou de beber [" + birdCount + " passaros]");
 
         birdEmpty.release();
         return b;
     }
+
+    Semaphore meh = new Semaphore(1);
 
 }
