@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("Debug?");
 
-        if(sc.nextInt() == 0) {
+        if(/*sc.nextInt() == 0*/ true) {
             // Tourist
             generate = 10;
             timeAppear = 2000;      //Milliseconds

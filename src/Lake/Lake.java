@@ -88,11 +88,11 @@ public class Lake {
     public void insertBird(Bird bird) throws Exception {
 
         while(touristCount == maxTourists || birdCount == maxBirds) {
-            if (touristCount == maxTourists) {
-                System.out.println("O passarinho " + bird.id + " teve que ir embora porque ha muitos turistas [" + birdCount + " passaros]");
-                Thread.sleep(ThreadBird.birdConstant);
-                System.out.println("O passaro: " + bird.id + " voltou a margem da piscina [" + birdCount + " passaros]");
-            }
+            if(touristCount != maxTourists)
+                break;
+            System.out.println("O passarinho " + bird.id + " teve que ir embora porque ha muitos turistas [" + birdCount + " passaros]");
+            Thread.sleep(ThreadBird.birdConstant);
+            System.out.println("O passaro: " + bird.id + " voltou a margem da piscina [" + birdCount + " passaros]");
         }
 
         meh.acquire();
@@ -129,5 +129,4 @@ public class Lake {
     }
 
     Semaphore meh = new Semaphore(1);
-
 }
