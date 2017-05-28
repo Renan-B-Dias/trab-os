@@ -16,9 +16,7 @@ public class Main {
         int generate, timeAppear, walkTime, maxTourists, timeBath;  // Tourist
         int birdGenerate, birdAppear, maxBirds, drinkTime;  // Bird
 
-        System.out.println("Debug?");
-
-        if(true) {
+        if(false) {
             // Tourist
             generate = 10;
             timeAppear = 2000;      //Milliseconds
