@@ -22,7 +22,7 @@ public class Main {
             timeAppear = 2000;      //Milliseconds
             walkTime = 1200;        //Milliseconds
             maxTourists = 3;
-            timeBath = 6000;        //Milliseconds
+            timeBath = 6000;    dsd    //Milliseconds
 
             //Bird
             birdGenerate = 20;
