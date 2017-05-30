@@ -20,7 +20,7 @@ public class BirdEater implements Runnable {
     private Lake lake;
 
     /**
-     * Consturtor padrão, que recebe uma instância da piscina (Lake) e a quantidade de turistas
+     * Consturtor padrão, que recebe uma instância da piscina (Lake) e a quantidade de passárinhos
      * a ser consumido.
      * @param lake Instância, compartilhada, da piscina.
      * @param consume Quantidade de ppassárinhos a serem "consumidos".

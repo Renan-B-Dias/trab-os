@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b331892d-4a01-4ad0-8aa1-c244db2b7e07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/t1W/Birds/Bird.class" afterPath="$PROJECT_DIR$/out/production/t1W/Birds/Bird.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/t1W/Main.class" afterPath="$PROJECT_DIR$/out/production/t1W/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birds/Bird.java" afterPath="$PROJECT_DIR$/src/Birds/Bird.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birds/BirdEater.java" afterPath="$PROJECT_DIR$/src/Birds/BirdEater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Birds/ThreadBird.java" afterPath="$PROJECT_DIR$/src/Birds/ThreadBird.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tourist/ThreadTourist.java" afterPath="$PROJECT_DIR$/src/Tourist/ThreadTourist.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tourist/Tourist.java" afterPath="$PROJECT_DIR$/src/Tourist/Tourist.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tourist/TouristEater.java" afterPath="$PROJECT_DIR$/src/Tourist/TouristEater.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,31 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bird.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Birds/Bird.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BirdEater.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Birds/BirdEater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="40" column="51" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="40" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadBird.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Birds/ThreadBird.java">
+      <file leaf-file-name="TouristEater.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tourist/TouristEater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -96,16 +84,16 @@
         <option value="$PROJECT_DIR$/src/Lake.java" />
         <option value="$PROJECT_DIR$/src/Tourist/TouristFactory.java" />
         <option value="$PROJECT_DIR$/src/Teste.java" />
-        <option value="$PROJECT_DIR$/src/Tourist/Tourist.java" />
-        <option value="$PROJECT_DIR$/src/Tourist/TouristEater.java" />
         <option value="$PROJECT_DIR$/src/Lake/TouristLake.java" />
         <option value="$PROJECT_DIR$/src/Lake/BirdLake.java" />
-        <option value="$PROJECT_DIR$/src/Tourist/ThreadTourist.java" />
         <option value="$PROJECT_DIR$/src/Lake/Lake.java" />
         <option value="$PROJECT_DIR$/src/Birds/Bird.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Birds/BirdEater.java" />
         <option value="$PROJECT_DIR$/src/Birds/ThreadBird.java" />
+        <option value="$PROJECT_DIR$/src/Tourist/Tourist.java" />
+        <option value="$PROJECT_DIR$/src/Tourist/ThreadTourist.java" />
+        <option value="$PROJECT_DIR$/src/Birds/BirdEater.java" />
+        <option value="$PROJECT_DIR$/src/Tourist/TouristEater.java" />
       </list>
     </option>
   </component>
@@ -670,12 +658,12 @@
       <workItem from="1495750061649" duration="7866000" />
       <workItem from="1495887429513" duration="1050000" />
       <workItem from="1496002124380" duration="100000" />
-      <workItem from="1496104538568" duration="2674000" />
+      <workItem from="1496104538568" duration="3450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59350000" />
+    <option name="totallyTimeSpent" value="60126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -760,8 +748,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,8 +777,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -818,8 +806,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,8 +833,8 @@
         <state relative-caret-position="140">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -985,8 +973,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1014,8 +1002,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,8 +1031,8 @@
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1068,25 +1056,6 @@
     <entry file="file://$PROJECT_DIR$/src/Teste.java" />
     <entry file="file://$PROJECT_DIR$/src/Lake/BirdLake.java" />
     <entry file="file://$PROJECT_DIR$/src/Lake/TouristLake.java" />
-    <entry file="file://$PROJECT_DIR$/src/Tourist/ThreadTourist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tourist/Tourist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lake/Lake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-760">
@@ -1103,34 +1072,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tourist/TouristEater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Birds/BirdEater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birds/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="380">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tourist/Tourist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tourist/ThreadTourist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Birds/ThreadBird.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="-350">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Birds/BirdEater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="40" column="51" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="40" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tourist/TouristEater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding />
         </state>
       </provider>
