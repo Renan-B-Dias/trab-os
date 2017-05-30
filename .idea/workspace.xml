@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b331892d-4a01-4ad0-8aa1-c244db2b7e07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lake/Lake.java" afterPath="$PROJECT_DIR$/src/Lake/Lake.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lake.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lake/Lake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="232" column="66" lean-forward="false" selection-start-line="232" selection-start-column="66" selection-end-line="232" selection-end-column="66" />
+            <state relative-caret-position="240">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,13 +94,13 @@
         <option value="$PROJECT_DIR$/src/Lake/TouristLake.java" />
         <option value="$PROJECT_DIR$/src/Lake/BirdLake.java" />
         <option value="$PROJECT_DIR$/src/Birds/Bird.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Birds/ThreadBird.java" />
         <option value="$PROJECT_DIR$/src/Tourist/Tourist.java" />
         <option value="$PROJECT_DIR$/src/Tourist/ThreadTourist.java" />
         <option value="$PROJECT_DIR$/src/Birds/BirdEater.java" />
         <option value="$PROJECT_DIR$/src/Tourist/TouristEater.java" />
         <option value="$PROJECT_DIR$/src/Lake/Lake.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -655,12 +665,12 @@
       <workItem from="1495750061649" duration="7866000" />
       <workItem from="1495887429513" duration="1050000" />
       <workItem from="1496002124380" duration="100000" />
-      <workItem from="1496104538568" duration="6462000" />
+      <workItem from="1496104538568" duration="6981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63138000" />
+    <option name="totallyTimeSpent" value="63657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -1053,14 +1063,6 @@
     <entry file="file://$PROJECT_DIR$/src/Teste.java" />
     <entry file="file://$PROJECT_DIR$/src/Lake/BirdLake.java" />
     <entry file="file://$PROJECT_DIR$/src/Lake/TouristLake.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Birds/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1114,8 +1116,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lake/Lake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="232" column="66" lean-forward="false" selection-start-line="232" selection-start-column="66" selection-end-line="232" selection-end-column="66" />
+        <state relative-caret-position="240">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
